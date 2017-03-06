@@ -14,3 +14,7 @@ document.getElementById("elBoton").onclick = function() {
 function myFunction() {
     document.getElementById("dropdown").classList.toggle("show");
 }
+
+function enviarFormulario(){
+  var enviar = document.getElementById("");
+}
