@@ -10,6 +10,7 @@ var mostrarOcultar = function(divtexte) {
 document.getElementById("elBoton").onclick = function() {
   myFunction()
 };
+
 function myFunction() {
     document.getElementById("dropdown").classList.toggle("show");
 }

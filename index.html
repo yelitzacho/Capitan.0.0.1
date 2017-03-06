@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="assets/css/app.css">
   </head>
   <body>
-    <div class="dropdown" align="right">Hola coder Maria
+    <div align="right" class="dropdown">Hola coder Maria
     <button id="elBoton" class="dropbtn"></button>
       <div id="dropdown" class="dropdown-content">
         <a href="assets/Coders/index.html">Coders</a>
@@ -14,14 +14,16 @@
       </div>
     </div>
     <br></br>
-    <img src="assets/image/logo.png" border="0"width="350" align="center">
-    <h2>¿Qué es Laboratoria?</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <h3>Temas</h3>
-    <br>
+    <div align="center"><img src="assets/image/logo.png" border="0"width="350"></div>
+    <div>
+      <h2>¿Qué es Laboratoria?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h3>Temas</h3>
+      <br>
+    </div>
     <input id="sprint1" type="button" value="Sprint 1" onclick="mostrarOcultar('text1')"/>
     <input id="sprint2" type="button" value="Sprint 2" onclick="mostrarOcultar('text2')"/>
-    <input id="sprint3" type="button" value="Sprint 3" onclick=""/>
+    <input id="sprint3" type="button" value="Sprint 3" onclick="mostrarOcultar('text3')"/>
     <br></br>
     <div id="text1">
       <h2> Sprint 1: Introducción al Javasript</h2>
@@ -33,6 +35,26 @@
       </ol>
       <br>
       <hr>
+        <h2>Quiz</h2>
+        <h3>Existen dos tipos de funciones</h3>
+      <div>
+        <input type="radio" name="opciones" value="1"> Expresadas y declaradas<br>
+        <input type="radio" name="opciones" value="2"> Explícitas y declaradas<br>
+        <input type ="radio" name="opciones" value="3"> Expresadas y derivadas<br>
+      </div>
+        <h3>Elija una propiedad de los arreglos</h3>
+      <div>
+        <input type="radio" name="opciones2" value="1"> clear<br>
+        <input type="radio" name="opciones2" value="2"> pop<br>
+        <input type ="radio" name="opciones2" value="3"> add<br>
+      </div>
+        <h3>Un objeto tiene ______ y ______</h3>
+      <div>
+        <input type="radio" name="opciones3" value="1"> Números y letras<br>
+        <input type="radio" name="opciones3" value="2"> Partes y Validaciones<br>
+        <input type ="radio" name="opciones3" value="3"> Propiedades y valores<br></br>
+        <input id="enviar" type="submit" value="Enviar" onclick=""/>
+      </div>
     </div>
     <div id="text2">
       <h2> Sprint 2: Introducción al desarrollo web  construcción de páginas web </h2>
@@ -48,18 +70,31 @@
       <hr>
         <h2>Quiz</h2>
         <h3>¿Cuál es el comando para iniciar un repositorio desde la consola?</h3>
+      <div>
         <input type="radio" name="opciones" value="1"> git init .<br>
         <input type="radio" name="opciones" value="2"> git init<br>
         <input type ="radio" name="opciones" value="3"> git init add<br>
+      </div>
         <h3>¿Cuál es finalidad de hacer una prueba unitaria?</h3>
-        <input type="radio" name="opciones" value="1"> Comprobar que el código funciona correctamente<br>
-        <input type="radio" name="opciones" value="2"> Darle valores a los parámetros de dichas funciones<br>
-        <input type ="radio" name="opciones" value="3"> No tiene ningún fin<br>
+      <div>
+        <input type="radio" name="opciones2" value="1"> Comprobar que el código funciona correctamente<br>
+        <input type="radio" name="opciones2" value="2"> Darle valores a los parámetros de dichas funciones<br>
+        <input type ="radio" name="opciones2" value="3"> No tiene ningún fin<br>
+      </div>
         <h3>¿Qué significa DOM?</h3>
-        <input type="radio" name="opciones" value="1"> Dual Objet Model<br>
-        <input type="radio" name="opciones" value="2"> Document Objet Model<br>
-        <input type ="radio" name="opciones" value="3"> Document Obsolet Model<br></br>
-        <input id="enviar" type="button" value="Enviar" onclick=""/>
+      <div>
+        <input type="radio" name="opciones3" value="1"> Dual Objet Model<br>
+        <input type="radio" name="opciones3" value="2"> Document Objet Model<br>
+        <input type ="radio" name="opciones3" value="3"> Document Obsolet Model<br></br>
+        <input id="enviar" type="submit" value="Enviar" onclick="enviarFormulario()"/>
+      </div>
+    </div>
+    <div id="text3">
+      <h2> Sprint 3: CSS</h2>
+      <ol>
+        <li>Próximamente...</li>
+      </ol>
+      <br>
     </div>
     <script src="assets/js/app.js"></script>
   </body>
