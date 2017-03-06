@@ -1,4 +1,4 @@
-var mostarOcultar = function(divtexte) {
+var mostrarOcultar = function(divtexte) {
 	var divtext = document.getElementById(divtexte);
 	if (divtext.style.display == "block" ) {
 		divtext.style.display = "none";

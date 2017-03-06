@@ -2,6 +2,10 @@
   font-family: 'Prompt', sans-serif;
 }
 
+#text1{
+	display : none;
+}
+
 .dropbtn {
     background-color: white;
     color: black;
