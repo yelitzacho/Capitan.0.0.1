@@ -1,3 +1,25 @@
+function myFunction() {
+	document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+	if (!event.target.matches('.dropbtn')) {
+
+		var dropdowns = document.getElementsByClassName("dropdown-content");
+		var i;
+		for (i = 0; i < dropdowns.length; i++) {
+			var openDropdown = dropdowns[i];
+			if (openDropdown.classList.contains('show')) {
+				openDropdown.classList.remove('show');
+			}
+		}
+	}
+}
+
+
+
+
+
 function sprint2 (){
   document.getElementById('sprint2').innerHTML= "<br> Sprint 2: Introducción al desarrollo web  construcción de páginas web </br>" +
                                                 "<br> 1. Ciclo de vida del desarrollo web y arquitectura básica cliente / servidor / Configuración del ambiente de trabajo e introducción a git.</br>" +
